@@ -3,7 +3,7 @@ import { TextField } from '../TextField';
 import { Movie } from '../../types/Movie';
 
 type Props = {
-  onAdd: (movie: Movie) => void;
+  onAdd: (movie: Omit<Movie, 'id'>) => void;
 };
 
 export const NewMovie: React.FC<Props> = ({ onAdd }) => {
